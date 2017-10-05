@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#34000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/report_user"
+                android:textColor="@color/pure_red"
+                android:textSize="21sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.8dp"
+                android:text="@string/infomation_report"
+                android:textColor="@color/dark_gray"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:id="@+id/inappropriate_messages_radio"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_radio_check" />
+
+                <jp.stage.stagelovemaker.views.FormInputText
+                    android:id="@+id/inappropriate_messages_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dp"
+                    android:layout_toRightOf="@+id/inappropriate_messages_radio" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22.5dp"
+            android:layout_marginLeft="122dp">
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/send"
+                android:textAllCaps="true"
+                android:textColor="@color/pure_red"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

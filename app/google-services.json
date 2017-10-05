@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "392734258655",
+    "firebase_url": "https://stage-love-maker.firebaseio.com",
+    "project_id": "stage-love-maker",
+    "storage_bucket": "stage-love-maker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392734258655:android:76322339185f0926",
+        "android_client_info": {
+          "package_name": "com.prostage.tinderswipecards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392734258655-35nsvfglm5mh701o02d555ui6f9voiir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBV3-yb2TEvDO69iay7Dqj_-7JUe6evhE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392734258655:android:af4c00aa2e9a238c",
+        "android_client_info": {
+          "package_name": "jp.stage.stagelovemaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392734258655-que5b6qos07t4cmsbpvs3fbtbellfv5p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.stage.stagelovemaker",
+            "certificate_hash": "0e6d32351fee0ab39d7393d41690667d2476f4b1"
+          }
+        },
+        {
+          "client_id": "392734258655-35nsvfglm5mh701o02d555ui6f9voiir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBV3-yb2TEvDO69iay7Dqj_-7JUe6evhE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392734258655-35nsvfglm5mh701o02d555ui6f9voiir.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "392734258655-vtpak3bdciujs28ricrl7jcd01nb380c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.stagegroup.stagelovemaker"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

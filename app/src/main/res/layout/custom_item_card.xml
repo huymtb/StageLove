@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgAvatar_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="14dp">
+
+            <LinearLayout
+                android:id="@+id/lnName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtNameAge_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:text="Name, Age"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="-2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="2"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtAddress_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnName"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Address"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="2"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/item_swipe_right_indicator"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/img_swipe_like" />
+
+        <ImageView
+            android:id="@+id/item_swipe_left_indicator"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/img_swipe_nope" />
+
+        <ImageView
+            android:id="@+id/item_swipe_top_indicator"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/superlike" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

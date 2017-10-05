@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="page_control_height">9.5dp</dimen>
+    <dimen name="page_control_margin">12dp</dimen>
+    <dimen name="size_image_tabbar">32dp</dimen>
+    <dimen name="margin_avatar_edit">25dp</dimen>
+    <dimen name="margin_horizontal_button_setting">15dp</dimen>
+    <dimen name="margin_vertical_button_setting">15dp</dimen>
+    <dimen name="form_margin">30dp</dimen>
+    <dimen name="width_interest_button">99dp</dimen>
+    <dimen name="padding_interest_button">5dp</dimen>
+    <dimen name="margin_top_title_bar">-1.8dp</dimen>
+    <dimen name="size_edittext">13sp</dimen>
+    <dimen name="size_avatar">100dp</dimen>
+    <dimen name="margin_top_avatar_pals">72dp</dimen>
+</resources>

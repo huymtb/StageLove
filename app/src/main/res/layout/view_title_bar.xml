@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/background_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_shadow_bottom" />
+
+        <View
+            android:id="@+id/background_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_red"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="80dp"
+            android:layout_toRightOf="@+id/back_img"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/title_bar_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20.5dp"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:textColor="@color/medium_dark_gray"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/icon_left_img"
+                android:layout_width="21dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/title_bar_txt"
+                android:paddingLeft="10dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/icon_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="51.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingBottom="14dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="16dp"
+            android:paddingTop="14dp" />
+
+        <ImageView
+            android:id="@+id/icon_middle_img"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/icon_right_img"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <TextView
+            android:id="@+id/done_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/medium_dark_gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</merge>

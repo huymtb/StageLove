@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimary</item>
+        <item name="apcStyles">@style/AppPageControlStyle</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+
+    </style>
+
+    <style name="Theme.StageLoveMaker.Splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/proximanovasoft-regular.otf</item>
+    </style>
+
+    <style name="MyHeaderSettings" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontPath">fonts/proximanovasoft-semibold.otf</item>
+    </style>
+
+    <style name="MyTitleSettings" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontPath">fonts/proximanovasoft-regular.otf</item>
+    </style>
+
+    <style name="MyContentSettings" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontPath">fonts/proximanovasoft-regular.otf</item>
+    </style>
+
+    <style name="AppPageControlStyle">
+        <!-- To change indicator size -->
+        <item name="apc_indicatorSize">4dp</item>
+        <!-- To change distance between indicators -->
+        <item name="apc_indicatorDistance">4dp</item>
+        <!-- To change current item indicator size -->
+        <item name="apc_currentIndicatorSize">3.8dp</item>
+        <!-- To change indicator colors -->
+        <item name="apc_colorCurrentDefault">@color/colorAccent</item>
+        <item name="apc_colorCurrentPressed">@color/colorAccent</item>
+        <item name="apc_colorNormalDefault">@android:color/darker_gray</item>
+        <item name="apc_colorNormalPressed">@android:color/white</item>
+    </style>
+
+    <style name="MyTextViewHeaderStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyTextViewSettingStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/gray37</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="color_switch_style">
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+</resources>

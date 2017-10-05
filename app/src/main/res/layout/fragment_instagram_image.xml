@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <GridView
+        android:id="@+id/instagram_image_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/padding_interest_button"
+        android:columnWidth="@dimen/width_interest_button"
+        android:horizontalSpacing="@dimen/padding_interest_button"
+        android:numColumns="auto_fit"
+        android:stretchMode="none"
+        android:verticalSpacing="@dimen/padding_interest_button"></GridView>
+
+</RelativeLayout>

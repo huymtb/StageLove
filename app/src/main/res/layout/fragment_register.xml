@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <jp.stage.stagelovemaker.views.BackgroundGradientTopBottom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <jp.stage.stagelovemaker.views.LoginActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <jp.stage.stagelovemaker.views.FormInputText
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_margin"
+                android:layout_marginRight="@dimen/form_margin"
+                android:layout_marginTop="17.5dp" />
+
+            <jp.stage.stagelovemaker.views.FormInputText
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_username"
+                android:layout_marginLeft="@dimen/form_margin"
+                android:layout_marginRight="@dimen/form_margin" />
+
+            <jp.stage.stagelovemaker.views.FormInputText
+                android:id="@+id/tv_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_email"
+                android:layout_marginLeft="@dimen/form_margin"
+                android:layout_marginRight="@dimen/form_margin" />
+
+            <jp.stage.stagelovemaker.views.FormInputText
+                android:id="@+id/tv_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_password"
+                android:layout_marginLeft="@dimen/form_margin"
+                android:layout_marginRight="@dimen/form_margin" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_confirm_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="19dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDialog"
+    android:clickable="true">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <TextView
+                android:id="@+id/title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20.5dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/question_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="55dp"
+                android:lineSpacingExtra="3.5dp"
+                android:text="@string/question_delete_account"
+                android:textColor="@color/medium_dark_gray" />
+
+            <jp.stage.stagelovemaker.views.FormInputText
+                android:id="@+id/username_inputtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <jp.stage.stagelovemaker.views.FormInputText
+                android:id="@+id/password_inputtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_inputtext"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/allow_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/password_inputtext"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/delete_account"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16.5sp" />
+
+            <TextView
+                android:id="@+id/deny_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/allow_txt"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/allow_txt"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/cancel"
+                android:textColor="@color/dark_gray"
+                android:textSize="16.5sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

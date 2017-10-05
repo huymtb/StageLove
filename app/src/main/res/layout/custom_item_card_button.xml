@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/bt_rewind"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:src="@drawable/rewind_gradient_disabled"
+                app:backgroundTint="@android:color/white"
+                app:fabSize="mini" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/bt_pass"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:src="@drawable/pass_gradient_disabled"
+                app:backgroundTint="@android:color/white"
+                app:fabSize="normal" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/bt_boost"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_boost_empty_chat"
+                app:backgroundTint="@android:color/white"
+                app:fabSize="mini" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/bt_like"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:src="@drawable/heart"
+                app:backgroundTint="@android:color/white"
+                app:fabSize="mini" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/bt_superlike"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/superlike_gradient_disabled"
+                app:backgroundTint="@android:color/white"
+                app:fabSize="mini" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

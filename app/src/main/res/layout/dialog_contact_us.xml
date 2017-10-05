@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDialog"
+    android:clickable="true">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="34.5dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/contact_us"
+                android:textColor="@color/very_dark_gray"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/content_question_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/title_txt"
+                android:layout_below="@+id/title_txt"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/content_contact_us"
+                android:textColor="@color/dark_gray"
+                android:textSize="17dp" />
+
+            <jp.stage.stagelovemaker.views.FormInputText
+                android:id="@+id/contact_us_inputtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_question_txt"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_us_inputtext"
+                android:layout_marginRight="18.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/ok_btn"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif-medium"
+                android:padding="15dp"
+                android:text="@string/cancel"
+                android:textColor="@color/very_dark_gray"
+                android:textSize="16.5sp" />
+
+            <TextView
+                android:id="@+id/ok_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/contact_us_inputtext"
+                android:layout_marginRight="23.5dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="15dp"
+                android:text="@string/send"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16.5sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/circleButtonRefresh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_refresh"
+            app:cb_color="#fff9e1"
+            app:cb_pressedRingWidth="12dp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/circleButtonClose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_close"
+            app:cb_color="#ffddde"
+            app:cb_pressedRingWidth="8dp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/circleButtonHeart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:src="@drawable/ic_heart"
+            app:cb_color="#dcfff5"
+            app:cb_pressedRingWidth="8dp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/circleButtonStar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_star"
+            app:cb_color="#ddefff"
+            app:cb_pressedRingWidth="12dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

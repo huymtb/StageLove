@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_new_match"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/new_pal_layout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="190dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pals_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/avatar"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="0.2dp" />
+
+        <RelativeLayout
+            android:id="@+id/pal_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pals_avatar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/pal_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="20.5dp" />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_pal_layout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="190dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/avatar"
+            app:civ_border_color="@android:color/darker_gray"
+            app:civ_border_width="0.2dp" />
+
+        <RelativeLayout
+            android:id="@+id/my_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_avatar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/my_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="20.5dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/new_talk_pal"
+        android:textColor="@android:color/white"
+        android:textSize="34sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chat_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/say_hi_to_your_new_talk_pal"
+        android:textColor="@android:color/white"
+        android:textSize="16.5sp" />
+
+    <Button
+        android:id="@+id/chat_btn"
+        fontPath="fonts/proximanovasoft-semibold.otf"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/later_layout"
+        android:layout_below="@+id/view_pager"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_send_message"
+        android:text="@string/send_a_message"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        tools:ignore="MissingPrefix" />
+
+    <RelativeLayout
+        android:id="@+id/later_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_button">
+
+        <TextView
+            android:id="@+id/later_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/later"
+            android:textColor="@color/dark_gray"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <jp.stage.stagelovemaker.views.BackgroundGradientTopBottom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <jp.stage.stagelovemaker.views.LoginActionBar
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/action_bar"
+            android:layout_marginBottom="@dimen/_20ssp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="@string/join_in_stage"
+            android:textColor="@color/very_dark_gray"
+            android:textSize="18.5sp" />
+
+        <jp.stage.stagelovemaker.views.FormInputText
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_description"
+            android:layout_marginLeft="@dimen/form_margin"
+            android:layout_marginRight="@dimen/form_margin"
+            android:layout_marginTop="34.5dp" />
+
+        <jp.stage.stagelovemaker.views.FormInputText
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_username"
+            android:layout_marginLeft="@dimen/form_margin"
+            android:layout_marginRight="@dimen/form_margin"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="19dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

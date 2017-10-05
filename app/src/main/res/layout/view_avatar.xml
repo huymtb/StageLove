@@ -1,0 +1,25 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:layout_centerHorizontal="true">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/avatar_user_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:siBorderColor="@android:color/white"
+            android:src="@mipmap/avatar"/>
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/icon_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:siBorderColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_edit" />
+    </RelativeLayout>
+</merge>
